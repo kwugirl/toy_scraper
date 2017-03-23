@@ -1,2 +1,9 @@
-<h1>YelpReviews#index</h1>
-<p>Find me in app/views/yelp_reviews/index.html.erb</p>
+<%= form_tag("/search", method: "get") do %>
+  I would like to fetch the
+  <%= number_field(:reviews, :count, in: 1..9, step: 1, value: 9) %> most recent reviews
+  for the New York, NY-based
+  <%= label_tag(:restaurant_name, "pizza restaurant named:") %>
+  <%= text_field_tag(:restaurant_name) %>
+
+  <%= submit_tag("Allons-y, Alonso!") %>
+<% end %>
