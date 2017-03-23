@@ -8,6 +8,9 @@ gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
+gem 'httparty'
+gem 'nokogiri'
+
 group :development, :test do
   gem 'pry'
 end
