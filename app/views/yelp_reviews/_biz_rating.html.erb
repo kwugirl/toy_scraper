@@ -1,5 +1,5 @@
-hello this is the partial
-
-<%= business %>
+The <%= count %> most recent reviews of
+<%= link_to(business.name, business.url) %> gave it
+an average rating of <%= business.avg_rating_across(count) %>.
 
 Ready for more?

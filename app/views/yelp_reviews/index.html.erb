@@ -1,4 +1,4 @@
-<%= render partial: "biz_rating", locals: {business: business} if business %>
+<%= render partial: "biz_rating", locals: {business: business, count: count} if business %>
 
 <%= form_tag("/search", method: "get") do %>
   I would like to fetch the
