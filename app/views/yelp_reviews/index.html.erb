@@ -1,3 +1,5 @@
+<%= render partial: "biz_rating", locals: {business: business} if business %>
+
 <%= form_tag("/search", method: "get") do %>
   I would like to fetch the
   <%= number_field(:reviews, :count, in: 1..9, step: 1, value: 9) %> most recent reviews

@@ -1,6 +1,7 @@
 class YelpReviewsController < ApplicationController
   def index
-    render 'index'
+    business = 1
+    render 'index', locals: {business: business}
   end
 
   def search
